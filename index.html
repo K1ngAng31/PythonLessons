@@ -23,9 +23,9 @@
       <div style="margin-top:40px;">
         <br>
         <div class="typewriter" align=center style = color:black;font-size:30px;>
-          <p><h1 class = "w1">Welcome World!</h1></p>
+          <p><h1 class = "w1">Hello, World!</h1></p>
         </div>
-        <div class="typewriter" align=center style = color:Yellow>
+        <div class="typewriter" align=center style = color:green>
           <p><h1 class="w2"><u red>Lets Learn How to code in PYTHON!</u></h1></p>
         </div>
         <br>
@@ -188,15 +188,22 @@
               <div id ="Intro" >
                 <div class="g">
                   <button class="b1"onclick="typeWriter()">Start Here</button>
+                  <button class="b2"onclick="typeWriter2()">Do you have a python environment?</button>
                   <p id="demo"></p>
+                  <p id= "ns"></p>
+
 
                 </div>
                 <h2><u>Introduction, Installing/Running Python for FIRST TIMERS</u></h2>
                 <div class="g">
                     <script>
                         var i = 0;
+                        var j = 0;
                         var txt = 'Lets Install Python! \
                         If you already have a python environment set up, go ahead and skip to Lesson 1.'
+                        var txt2 = 'If Yes, skip to lesson 1.\
+                        If you are not sure, review this lesson and then we can get started.'
+
                         var speed = 30;
 
                         function typeWriter() {
@@ -205,6 +212,14 @@
                             i++;
                             setTimeout(typeWriter, speed);
                           }
+                        }
+                        function typeWriter2(){
+                          if (j < txt2.length) {
+                            document.getElementById("ns").innerHTML += txt2.charAt(j);
+                            j++;
+                            setTimeout(typeWriter2, speed);
+                          }
+
                         }
                       </script>
                       <p>
@@ -223,14 +238,30 @@
                 </div>
 
               <div id ="L1">
+
                 <h2><u>Lesson 1: Basic Calculations | Varaibles </u></h2>
                 <div class="g">
+                    <button class="b1"onclick="typeWriter3()">Lesson 1</button>
+                    <p id="l1"></p>
+                    <script>
+                        var lesson1 = 0;
+                        var txt_lesson1 = 'Intentions: Learn basic calculations \
+                        and basic variable assignments'
+                        var lesson1_speed = 30;
+                        function typeWriter3() {
+                          if (i < txt_lesson1.length) {
+                            document.getElementById("l1").innerHTML += txt_lesson1.charAt(lesson1);
+                            lesson1++;
+                            setTimeout(typeWriter3, lesson1_speed);
+                          }
+                        }
+                      </script>
                   <p>Start Lesson</p>
                 </div>
                 <div class="dropdown">
                   <button class="dropbtn">Download File</button>
                   <div class="dropdown-content">
-                    <a href="#">Intro</a>
+                    <a href="Lesson1.py" download = "Lesson1.py" target="_blank">Lesson1.py</a>
                   </div>
                 </div>
               </div>
@@ -510,7 +541,7 @@
     </script>
     <!-- End Script for Navbar -->
     <footer>
-      <p>Made with lots love.</p>
+      <p>Made with lots of love.</p>
       <p>I have high hopes that this will help you become a Beginner Programmer in PYTHON!</p>
       <p>Want to see more projects? Visit my website, just click the copy right below :)</p>
       <p><a href="https://angel-santana.com/" target="_blank" style = color:black>&copy Angel Santana 2020</a></p>
