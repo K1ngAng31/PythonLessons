@@ -31,7 +31,7 @@
         <br>
       </div>
         <header>
-          <h2 id = "home">What will you learn?</h2>
+          <!-- <h2 id = "home">What will you learn?</h2> -->
         </header>
         <section>
           <nav>
@@ -63,6 +63,7 @@
               <p>I am no saying it will be easy, but it will be worth the struggle, and if you don't struggle, awesome, then there can be bigger things to move on to using PYTHON</p>
               <p align=center>LETS GET STARTED!</p>
             </div>
+
             <div id ="Topics">
               <h1 align=center><u>What will you learn?</u></h1>
               <div class="row">
@@ -126,76 +127,107 @@
         </section>
         <header id="Lessons">
           <h1 align=center><u>Lessons</u></h1>
+          <p align=center>Examples with comments provided to download. </p>
         </header>
         <section>
           <nav>
             <ul>
-              <li><a href="#Intro">Intro</a></li>
-              <br>
-              <li><a href="#L1">Lesson One:</a></li>
-              <br>
-              <li><a href="#L2">Lesson Two:</a></li>
-              <br>
-              <li><a href="#L3">Lesson Three:</a></li>
-              <br>
-              <li><a href="#L4">Lesson Four:</a></li>
-              <br>
-              <li><a href="#L5">Lesson Five:</a></li>
-              <br>
-              <li><a href="#L6">Lesson Six:</a></li>
-              <br>
-              <li><a href="#L7">Lesson Seven:</a></li>
-              <br>
-              <li><a href="#L8">Lesson Eight:</a></li>
-              <br>
-              <li><a href="#L9">Lesson Nine:</a></li>
-              <br>
-              <li><a href="#L10">Lesson Ten:</a></li>
-              <br>
-              <li><a href="#L11">Lesson Eleven:</a></li>
-              <br>
-              <li><a href="#L12">Lesson Tweleve:</a></li>
-              <br>
-              <li><a href="#L13">Lesson Thirteen:</a></li>
-              <br>
-              <li><a href="#L14">Lesson Fourteen:</a></li>
-              <br>
-              <li><a href="#L15">Lesson Fifteen: </a></li>
-              <br>
-              <li><a href="#L16">Lesson Sixteen:</a></li>
-              <br>
-              <li><a href="#L17">Lesson Seventeen:</a></li>
-              <br>
-              <li><a href="#L18">Lesson Eighteen:</a></li>
+              <li><a href="#Intro">Intro: Starting Python</a></li>
+              <br><br>
+              <li><a href="#L1">1: Basic Calculations • Varaible</a></li>
+              <br><br>
+              <li><a href="#L2">2: Python Types</a></li>
+              <br><br>
+              <li><a href="#L3">3:Turtle Module</a></li>
+              <br><br>
+              <li><a href="#L4">4: If/Else statemetns</a></li>
+              <br><br>
+              <li><a href="#L5">5: While/For Loops</a></li>
+              <br><br>
+              <li><a href="#L6">6: Create Functions</a></li>
+              <br><br>
+              <li><a href="#L7">7: Classes and Objects</a></li>
+              <br><br>
+              <li><a href="#L8">8: Built-in Functions</a></li>
+              <br><br>
+              <li><a href="#L9">9: Turtle Module (Intermediate)</a></li>
+              <br><br>
+              <li><a href="#L10">10: Tkinder Module (Intermediate)</a></li>
+              <br><br>
+              <li><a href="#L11">11: Create Game</a></li>
+              <br><br>
+              <li><a href="#L12">12: Game cont.</a></li>
+              <br><br>
+              <li><a href="#L13">13:</a></li>
+              <br><br>
+              <li><a href="#L14">14:</a></li>
+              <br><br>
+              <li><a href="#L15">15: </a></li>
+              <br><br>
+              <li><a href="#L16">16:</a></li>
+              <br><br>
+              <li><a href="#L17">17:</a></li>
+              <br><br>
+              <li><a href="#L18">18:</a></li>
 
             </ul>
           </nav>
             <article>
-              <div id ="Intro">
-                <h1><u>Intro</u></h1>
+              <div id ="Intro" >
+                <div class="g">
+                  <button class="b1"onclick="typeWriter()">Start Here</button>
+                  <p id="demo"></p>
 
+                </div>
+                <h2><u>Introduction, Installing/Running Python for FIRST TIMERS</u></h2>
+                <div class="g">
+                    <script>
+                        var i = 0;
+                        var txt = 'Lets Install Python! \
+                        If you already have a python environment set up, go ahead and skip to Lesson 1.'
+                        var speed = 30;
+
+                        function typeWriter() {
+                          if (i < txt.length) {
+                            document.getElementById("demo").innerHTML += txt.charAt(i);
+                            i++;
+                            setTimeout(typeWriter, speed);
+                          }
+                        }
+                      </script>
+                      <p>
+                        <xmp>This is a preformatted text.
+      All characters in this area have the same width and
+      the spaces and line breaks within this element are shown as typed.
+                        </xmp>
+                      </p>
+                </div>
+              </div>
                 <div class="dropdown">
                   <button class="dropbtn">Download File</button>
                   <div class="dropdown-content">
                     <a href="#">Intro</a>
                   </div>
                 </div>
-              </div>
+
               <div id ="L1">
-                <h1><u>Lesson One: </u></h1>
-
-
+                <h2><u>Lesson 1: Basic Calculations | Varaibles </u></h2>
+                <div class="g">
+                  <p>Start Lesson</p>
+                </div>
                 <div class="dropdown">
                   <button class="dropbtn">Download File</button>
                   <div class="dropdown-content">
                     <a href="#">Intro</a>
                   </div>
                 </div>
-
               </div>
-              <div id ="L2">
-                <h1><u>Lesson 2: <u></h1>
 
+              <div id ="L2">
+                <h2><u>Lesson 2:Python Types <u></h2>
+                  <div class="g">
+                    <p>Start Lesson</p>
+                  </div>
                   <div class="dropdown">
                     <button class="dropbtn">Download File</button>
                     <div class="dropdown-content">
@@ -203,20 +235,25 @@
                     </div>
                   </div>
               </div>
+
               <div id ="L3">
-                <h1><u>Lesson 3: </u></h1>
-
+                <h2><u>Lesson 3: Turtle Module</u></h2>
+                <div class="g">
+                  <p>Start Lesson</p>
+                </div>
                 <div class="dropdown">
                   <button class="dropbtn">Download File</button>
                   <div class="dropdown-content">
                     <a href="#">Intro</a>
                   </div>
                 </div>
-
               </div>
+
               <div id ="L4">
-                <h1><u>Lesson 4: </u></h1>
-
+                <h2><u>Lesson 4: Conditional Statements (If/ELSE)</u></h2>
+                <div class="g">
+                  <p>Start Lesson</p>
+                </div>
                 <div class="dropdown">
                   <button class="dropbtn">Download File</button>
                   <div class="dropdown-content">
@@ -224,9 +261,12 @@
                   </div>
                 </div>
               </div>
+
               <div id ="L5">
-                <h1><u>Lesson 5: </u></h1>
-
+                <h2><u>Lesson 5: Conditional Statements cont. (While/For LOOPS)</u></h2>
+                <div class="g">
+                  <p>Start Lesson</p>
+                </div>
                 <div class="dropdown">
                   <button class="dropbtn">Download File</button>
                   <div class="dropdown-content">
@@ -234,9 +274,12 @@
                   </div>
                 </div>
               </div>
+
               <div id ="L6">
-                <h1><u>Lesson 6: </u></h1>
-
+                <h2><u>Lesson 6: Start to Use and Create Functions</u></h2>
+                <div class="g">
+                  <p>Start Lesson</p>
+                </div>
                 <div class="dropdown">
                   <button class="dropbtn">Download File</button>
                   <div class="dropdown-content">
@@ -244,9 +287,12 @@
                   </div>
                 </div>
               </div>
+
               <div id ="L7">
-                <h1><u>Lesson 7: </u></h1>
-
+                <h2><u>Lesson 7: Understand Classes and Objects</u></h2>
+                <div class="g">
+                  <p>Start Lesson</p>
+                </div>
                 <div class="dropdown">
                   <button class="dropbtn">Download File</button>
                   <div class="dropdown-content">
@@ -254,9 +300,12 @@
                   </div>
                 </div>
               </div>
+
               <div id ="L8">
-                <h1><u>Lesson 8: </u></h1>
-
+                <h2><u>Lesson 8: Look at Built-in Functions in Python</u></h2>
+                <div class="g">
+                  <p>Start Lesson</p>
+                </div>
                 <div class="dropdown">
                   <button class="dropbtn">Download File</button>
                   <div class="dropdown-content">
@@ -264,9 +313,12 @@
                   </div>
                 </div>
               </div>
+
               <div id ="L9">
-                <h1><u>Lesson 9: </u></h1>
-
+                <h2><u>Lesson 9: Turtle Module: More Advanced</u></h2>
+                <div class="g">
+                  <p>Start Lesson</p>
+                </div>
                 <div class="dropdown">
                   <button class="dropbtn">Download File</button>
                   <div class="dropdown-content">
@@ -274,9 +326,12 @@
                   </div>
                 </div>
               </div>
+
               <div id ="L10">
-                <h1><u>Lesson 10: </u></h1>
-
+                <h2><u>Lesson 10: Use Tkinter Module (Advanced Graphics)</u></h2>
+                <div class="g">
+                  <p>Start Lesson</p>
+                </div>
                 <div class="dropdown">
                   <button class="dropbtn">Download File</button>
                   <div class="dropdown-content">
@@ -284,9 +339,12 @@
                   </div>
                 </div>
               </div>
+
               <div id ="L11">
-                <h1><u>Lesson 11: </u></h1>
-
+                <h2><u>Lesson 11: Create Game</u></h2>
+                <div class="g">
+                  <p>Start Lesson</p>
+                </div>
                 <div class="dropdown">
                   <button class="dropbtn">Download File</button>
                   <div class="dropdown-content">
@@ -294,11 +352,14 @@
                   </div>
                 </div>
               </div>
+
               <div id ="L12">
-                <h1><u>Lesson 12: </u></h1>
+                <h2><u>Lesson 12: Create Game cont.</u></h2>
+                <div class="g">
+                  <p>Start Lesson</p>
+                </div>
                 <p> </p>
                 <p>  </p>
-
                 <div class="dropdown">
                   <button class="dropbtn">Download File</button>
                   <div class="dropdown-content">
@@ -306,11 +367,14 @@
                   </div>
                 </div>
               </div>
+
               <div id ="L13">
-                <h1><u>Lesson 13: </u></h1>
+                <h2><u>Lesson 13: </u></h2>
+                <div class="g">
+                  <p>Start Lesson</p>
+                </div>
                 <p> </p>
                 <p>  </p>
-
                 <div class="dropdown">
                   <button class="dropbtn">Download File</button>
                   <div class="dropdown-content">
@@ -318,11 +382,14 @@
                   </div>
                 </div>
               </div>
+
               <div id ="L14">
-                <h1><u>Lesson 14: </u></h1>
+                <h2><u>Lesson 14: </u></h2>
+                <div class="g">
+                  <p>Start Lesson</p>
+                </div>
                 <p> </p>
                 <p>  </p>
-
                 <div class="dropdown">
                   <button class="dropbtn">Download File</button>
                   <div class="dropdown-content">
@@ -330,11 +397,14 @@
                   </div>
                 </div>
               </div>
+
               <div id ="L15">
-                <h1><u>Lesson 15: </u></h1>
+                <h2><u>Lesson 15: </u></h2>
+                <div class="g">
+                  <p>Start Lesson</p>
+                </div>
                 <p> </p>
                 <p>  </p>
-
                 <div class="dropdown">
                   <button class="dropbtn">Download File</button>
                   <div class="dropdown-content">
@@ -342,11 +412,14 @@
                   </div>
                 </div>
               </div>
+
               <div id ="L16">
-                <h1><u>Lesson 16: </u></h1>
+                <h2><u>Lesson 16: </u></h2>
+                <div class="g">
+                  <p>Start Lesson</p>
+                </div>
                 <p> </p>
                 <p>  </p>
-
                 <div class="dropdown">
                   <button class="dropbtn">Download File</button>
                   <div class="dropdown-content">
@@ -354,11 +427,14 @@
                   </div>
                 </div>
               </div>
+
               <div id ="L17">
-                <h1><u>Lesson 17: </u></h1>
+                <h2><u>Lesson 17: </u></h2>
+                <div class="g">
+                  <p>Start Lesson</p>
+                </div>
                 <p> </p>
                 <p>  </p>
-
                 <div class="dropdown">
                   <button class="dropbtn">Download File</button>
                   <div class="dropdown-content">
@@ -366,11 +442,14 @@
                   </div>
                 </div>
               </div>
+
               <div id ="L18">
-                <h1><u>Lesson 18: </u></h1>
+                <h2><u>Lesson 18: </u></h2>
+                <div class="g">
+                  <p>Start Lesson</p>
+                </div>
                 <p> </p>
                 <p>  </p>
-
                 <div class="dropdown">
                   <button class="dropbtn">Download File</button>
                   <div class="dropdown-content">
@@ -378,6 +457,7 @@
                   </div>
                 </div>
               </div>
+
             </article>
         </section>
         <section>
@@ -413,7 +493,7 @@
     </script>
     <!-- End Script for Navbar -->
     <footer>
-  <p>&copy Angel Santana 2020</p>
-</footer>
+      <p><a href="https://angel-santana.com/" target="_blank" style = color:black>&copy Angel Santana 2020</a></p>
+    </footer>
   </body>
 </html>
