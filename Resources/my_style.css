@@ -68,6 +68,7 @@ body{
   from, to { border-color: transparent; }
   50% { border-color: transparent; }
 }
+
 .g{
   flex: 50%;
   padding: 10px;
@@ -126,19 +127,7 @@ article {
 article h1{
   font-size: 40px;
 }
-.container {
-  font-family: Arial;
-}
 
-.text-block {
-  position: absolute;
-  bottom: 20px;
-  left: 20px;
-  background-color: black;
-  color: white;
-  padding-left: 20px;
-  padding-right: 20px;
-}
 .b1 {
   border: none;
 color: white;
